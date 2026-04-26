@@ -7,6 +7,7 @@ const FOLDER_OF_DEFAULT: String = "res://DEFAULT/"
 const DEFAULT_LIVES: int = 3
 const MAX_LIVES: int = 5
 
+
 @export_category("Switches")
 @export var have_stamina: bool = false
 @export var hit_stop_movement: bool = false
@@ -21,3 +22,6 @@ const MAX_LIVES: int = 5
 @export_category("Powers")
 @export var default_powers: Array[Resource] = []
 @export var obtained_powers: Array[Resource] = []
+
+#Internal variables
+@onready var arm_node: Node2D = $Arm

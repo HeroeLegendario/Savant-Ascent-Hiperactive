@@ -1,21 +1,27 @@
 [gd_scene format=3 uid="uid://6d2kiy2a7p1c"]
 
 [ext_resource type="Script" uid="uid://wijbioedq2q5" path="res://Scenes/Player/Scripts/player.gd" id="1_uvnfx"]
+[ext_resource type="Texture2D" uid="uid://bf7jnkw0pin4e" path="res://Assets/Sprites/Arm/Arm.png" id="2_a3d8c"]
+[ext_resource type="Script" uid="uid://cctun1kns7vc0" path="res://Scenes/Player/Scripts/arm.gd" id="2_xpcdj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tugb3"]
-radius = 7.0
-height = 38.0
+radius = 14.0
+height = 88.0
 
 [node name="Player" type="CharacterBody2D" unique_id=937524245]
 script = ExtResource("1_uvnfx")
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1563760111]
 shape = SubResource("CapsuleShape2D_tugb3")
 
 [node name="Arm" type="Node2D" parent="." unique_id=192524938]
-position = Vector2(0, -7)
+position = Vector2(0, -12)
+script = ExtResource("2_xpcdj")
+
+[node name="ArmSprite" type="Sprite2D" parent="Arm" unique_id=827545735]
+position = Vector2(37, 0)
+texture = ExtResource("2_a3d8c")
 
 [node name="Bullet Output" type="Marker2D" parent="Arm" unique_id=860167538]
-position = Vector2(8, 0)
+position = Vector2(68, 0)
 gizmo_extents = 1.0
