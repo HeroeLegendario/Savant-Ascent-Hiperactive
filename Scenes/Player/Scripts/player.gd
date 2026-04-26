@@ -16,7 +16,8 @@ const MAX_LIVES: int = 5
 @export var have_personalized_skin: bool = false # Si esta falso usara la skin por defecto de alchemist
 
 @export_category("Movement")
-@export_range(0, 100, 1) var elevator_initial_index: int = 0
+@export_range(0, 999999999) var stamina: int
+@export_range(0, 100) var elevator_initial_index: int = 0
 @export var elevator_vector_position: Array[Resource] = []
 
 @export_category("Powers")
@@ -24,4 +25,5 @@ const MAX_LIVES: int = 5
 @export var obtained_powers: Array[Resource] = []
 
 #Internal variables
-@onready var arm_node: Node2D = $Arm
+@onready var arm: Node2D = $Arm
+@onready var custom_components: Node = $"Custom Components"

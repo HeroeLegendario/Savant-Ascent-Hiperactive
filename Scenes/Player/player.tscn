@@ -25,3 +25,5 @@ texture = ExtResource("2_a3d8c")
 [node name="Bullet Output" type="Marker2D" parent="Arm" unique_id=860167538]
 position = Vector2(68, 0)
 gizmo_extents = 1.0
+
+[node name="Custom Components" type="Node" parent="." unique_id=1217871767]
