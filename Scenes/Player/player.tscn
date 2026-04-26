@@ -2,6 +2,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tugb3"]
 radius = 4.0
+height = 18.0
 
 [node name="Player" type="CharacterBody2D" unique_id=937524245]
 
@@ -11,6 +12,6 @@ shape = SubResource("CapsuleShape2D_tugb3")
 [node name="Arm" type="Node2D" parent="." unique_id=192524938]
 position = Vector2(0, -7)
 
-[node name="Marker2D" type="Marker2D" parent="Arm" unique_id=860167538]
+[node name="Bullet Output" type="Marker2D" parent="Arm" unique_id=860167538]
 position = Vector2(8, 0)
 gizmo_extents = 1.0
