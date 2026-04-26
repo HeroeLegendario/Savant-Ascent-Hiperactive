@@ -5,6 +5,8 @@ radius = 4.0
 height = 18.0
 
 [node name="Player" type="CharacterBody2D" unique_id=937524245]
+position = Vector2(151, 172)
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1563760111]
 shape = SubResource("CapsuleShape2D_tugb3")
