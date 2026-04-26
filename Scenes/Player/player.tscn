@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://6d2kiy2a7p1c"]
 
+[ext_resource type="Script" uid="uid://wijbioedq2q5" path="res://Scenes/Player/Scripts/player.gd" id="1_uvnfx"]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tugb3"]
-radius = 4.0
-height = 18.0
+radius = 7.0
+height = 38.0
 
 [node name="Player" type="CharacterBody2D" unique_id=937524245]
-position = Vector2(151, 172)
+script = ExtResource("1_uvnfx")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1563760111]

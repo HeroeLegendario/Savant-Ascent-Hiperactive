@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dulkma4j4lbea"]
+
+[node name="Base_Game" type="Node" unique_id=1018688668]
+
+[node name="Props" type="Node" parent="." unique_id=514125300]
+
+[node name="Level" type="Node2D" parent="." unique_id=2035056573]

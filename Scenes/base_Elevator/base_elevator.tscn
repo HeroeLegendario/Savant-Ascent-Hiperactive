@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dq3b3f7ndtnh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5cel"]
+size = Vector2(34, 56)
+
+[node name="BaseElevator" type="AnimatableBody2D" unique_id=1734896550]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=675647781]
+shape = SubResource("RectangleShape2D_u5cel")
