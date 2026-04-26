@@ -6,7 +6,8 @@ const MAX_ELEVATORS: int = 100
 const FOLDER_OF_DEFAULT: String = "res://DEFAULT/"
 const DEFAULT_LIVES: int = 3
 const MAX_LIVES: int = 5
-
+const STAMINA_EXPEND: int = 20
+const MANA_EXPEND: int = 10
 
 @export_category("Switches")
 @export var have_stamina: bool = false
@@ -16,7 +17,8 @@ const MAX_LIVES: int = 5
 @export var have_personalized_skin: bool = false # Si esta falso usara la skin por defecto de alchemist
 
 @export_category("Movement")
-@export_range(0, 999999999) var stamina: int
+@export_range(0, 100000000000000) var stamina: int #cada movimiento deberia gastar 20 de estamina por defecto
+@export_range(0, 100000000000000) var mana: int #cada ataque consume 10 de mana por defecto
 @export_range(0, 100) var elevator_initial_index: int = 0
 @export var elevator_vector_position: Array[Resource] = []
 
