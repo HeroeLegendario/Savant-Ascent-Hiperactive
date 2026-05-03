@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dq3b3f7ndtnh"]
 
-[ext_resource type="Script" uid="uid://bvp78csb3465j" path="res://Scenes/base_Elevator/Script/base_elevator.gd" id="1_07vyo"]
+[ext_resource type="Script" uid="uid://bvp78csb3465j" path="res://Scripts/Resource Extends/AnimatableBody2D/base_elevator.gd" id="1_07vyo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5cel"]
-size = Vector2(34, 56)
+size = Vector2(66, 93)
 
 [node name="BaseElevator" type="AnimatableBody2D" unique_id=1734896550]
 collision_layer = 2
@@ -11,7 +11,8 @@ collision_mask = 31
 script = ExtResource("1_07vyo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=675647781]
+position = Vector2(0, 7.5)
 shape = SubResource("RectangleShape2D_u5cel")
 
 [node name="PlayerMarker2D" type="Marker2D" parent="." unique_id=139829859]
-position = Vector2(0, -42)
+position = Vector2(0, -67)

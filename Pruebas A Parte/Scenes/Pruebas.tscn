@@ -1,8 +1,18 @@
 [gd_scene format=3 uid="uid://d33rroui6svd1"]
 
+[ext_resource type="Script" uid="uid://8k280sotjgej" path="res://Scripts/Resource Extends/Node2D/base_level.gd" id="1_0hmhb"]
 [ext_resource type="PackedScene" uid="uid://dq3b3f7ndtnh" path="res://Scenes/base_Elevator/base_elevator.tscn" id="1_ukrqy"]
+[ext_resource type="PackedScene" uid="uid://6d2kiy2a7p1c" path="res://Scenes/base_Player/player.tscn" id="2_wl7o8"]
 
-[node name="Pruebas" type="Node2D" unique_id=1461154814]
+[node name="Pruebas" type="Node2D" unique_id=235224415]
+script = ExtResource("1_0hmhb")
+metadata/_custom_type_script = "uid://8k280sotjgej"
 
 [node name="BaseElevator" parent="." unique_id=1734896550 instance=ExtResource("1_ukrqy")]
-position = Vector2(131, 89)
+position = Vector2(176, 248)
+
+[node name="BaseElevator2" parent="." unique_id=911038731 instance=ExtResource("1_ukrqy")]
+position = Vector2(429, 253)
+
+[node name="Player" parent="." unique_id=937524245 instance=ExtResource("2_wl7o8")]
+position = Vector2(176, 181)

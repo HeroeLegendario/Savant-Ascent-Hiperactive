@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://6d2kiy2a7p1c"]
 
-[ext_resource type="Script" uid="uid://wijbioedq2q5" path="res://Scenes/base_Player/Scripts/player.gd" id="1_uvnfx"]
+[ext_resource type="Script" uid="uid://wijbioedq2q5" path="res://Scripts/Resource Extends/CharacterBody2D/player.gd" id="1_uvnfx"]
 [ext_resource type="Texture2D" uid="uid://bf7jnkw0pin4e" path="res://Assets/Sprites/Arm/Arm.png" id="2_a3d8c"]
-[ext_resource type="Script" uid="uid://cctun1kns7vc0" path="res://Scenes/base_Player/Scripts/arm.gd" id="2_xpcdj"]
+[ext_resource type="Script" uid="uid://cctun1kns7vc0" path="res://Scripts/Resource Extends/Node2D/arm.gd" id="2_xpcdj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tugb3"]
 radius = 14.0
-height = 88.0
+height = 52.0
 
 [node name="Player" type="CharacterBody2D" unique_id=937524245]
 collision_mask = 44

@@ -1,2 +1,2 @@
 extends Resource
-class_name BaseMovement
+class_name BaseMovementResource

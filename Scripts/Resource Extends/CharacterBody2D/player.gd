@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name BasePlayer
+class_name BasePlayer2D
 
 const MIN_ELEVATORS: int = 1 # Siempre deberia haber un elevador si no hay elevadores muere inmediatamente
 const MAX_ELEVATORS: int = 100
@@ -27,9 +27,10 @@ const MANA_EXPEND: int = 10
 @export var elevator_vector_position: Array[Resource] = []
 
 @export_category("Custom Components")
-@export var custom_movement_resource: Resource
-@export var custom_attack_resource: Resource
-@export var custom_live_resource: Resource
+@export var custom_movement_resource: BaseMovementResource
+@export var custom_attack_resource: BaseAttackResource
+@export var custom_live_resource: BaseLiveResource
+
 
 @export_category("Powers and Items")
 @export var default_powers: Array[Resource] = [] #Los poderes que ya tiene desde el inicio
@@ -42,6 +43,6 @@ const MANA_EXPEND: int = 10
 #Internal variables
 @onready var arm: ArmBase = $Arm
 
-var default_movement_resource: BaseMovement
-var default_attack_resource: Resource
-var defaults_live_resource: Resource
+var default_movement_resource: BaseMovementResource
+var default_attack_resource: BaseAttackResource
+var defaults_live_resource: BaseLiveResource
