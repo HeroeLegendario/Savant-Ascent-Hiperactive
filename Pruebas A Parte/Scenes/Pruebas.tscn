@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://d33rroui6svd1"]
 
+[ext_resource type="PackedScene" uid="uid://dq3b3f7ndtnh" path="res://Scenes/base_Elevator/base_elevator.tscn" id="1_ukrqy"]
+
 [node name="Pruebas" type="Node2D" unique_id=1461154814]
+
+[node name="BaseElevator" parent="." unique_id=1734896550 instance=ExtResource("1_ukrqy")]
+position = Vector2(131, 89)
