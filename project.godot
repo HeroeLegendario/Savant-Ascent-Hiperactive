@@ -40,6 +40,7 @@ window/stdout/print_fps=false
 2d_physics/layer_4="Triggers"
 2d_physics/layer_5="Debris"
 2d_physics/layer_6="Objects"
+2d_physics/layer_7="Elevator Object"
 
 [physics]
 
