@@ -21,8 +21,8 @@ const MANA_EXPEND: int = 10
 @export var have_personalized_skin: bool = false # Si esta falso usara la skin por defecto de alchemist
 
 @export_category("Movement")
-@export_range(0, 100000000000000) var stamina: int #cada movimiento deberia gastar 20 de estamina por defecto
-@export_range(0, 100000000000000) var mana: int #cada ataque consume 10 de mana por defecto
+@export_range(0, 100000000000000) var max_stamina: int #cada movimiento deberia gastar 20 de estamina por defecto
+@export_range(0, 100000000000000) var max_mana: int #cada ataque consume 10 de mana por defecto
 @export_range(0, 100) var elevator_initial_index: int = 0
 @export var elevator_vector_position: Array[Resource] = []
 
@@ -46,3 +46,5 @@ const MANA_EXPEND: int = 10
 var default_movement_resource: BaseMovementResource
 var default_attack_resource: BaseAttackResource
 var defaults_live_resource: BaseLiveResource
+var stamina: int = max_stamina
+var mana: int = max_mana
