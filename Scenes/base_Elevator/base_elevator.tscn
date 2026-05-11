@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dq3b3f7ndtnh"]
 
 [ext_resource type="Script" uid="uid://bvp78csb3465j" path="res://Scripts/Resource Extends/AnimatableBody2D/base_elevator.gd" id="1_07vyo"]
+[ext_resource type="Script" uid="uid://by0day0xr6ke1" path="res://Scenes/base_Elevator/Script/player_step_floor.gd" id="2_5h0ck"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5cel"]
 size = Vector2(66, 93)
@@ -14,13 +15,13 @@ collision_mask = 31
 script = ExtResource("1_07vyo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=675647781]
-position = Vector2(0, 7.5)
 shape = SubResource("RectangleShape2D_u5cel")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1656095216]
-position = Vector2(0, -58)
+[node name="PlayerStepFloor" type="Area2D" parent="." unique_id=1656095216]
+position = Vector2(0, -66)
 collision_layer = 64
+script = ExtResource("2_5h0ck")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=539891554]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerStepFloor" unique_id=539891554]
 position = Vector2(0, 17)
 shape = SubResource("RectangleShape2D_07vyo")

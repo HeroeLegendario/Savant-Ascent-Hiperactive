@@ -23,8 +23,8 @@ const MANA_EXPEND: int = 10
 @export_category("Movement")
 @export_range(0, 100000000000000) var max_stamina: int #cada movimiento deberia gastar 20 de estamina por defecto
 @export_range(0, 100000000000000) var max_mana: int #cada ataque consume 10 de mana por defecto
-@export_range(0, 100) var elevator_initial_index: int = 0
-@export var elevator_vector_position: Array[Resource] = []
+@export_range(-100000000000000, 100000000000000) var elevator_initial_index: int = 0
+@export var elevator_vector_position: Array[BaseElevator2D] = []
 
 @export_category("Custom Components")
 @export var custom_movement_resource: BaseMovementResource

@@ -8,4 +8,4 @@ class_name BaseLevel2D
 @export var level_name: String = ""
 @export_range(0, 999999999999999999) var level_time: int = 0 # El tiempo del nivel en segundos antes de terminar
 @export var rounds_enemy: Array[BaseEnemyRoundsResource]
-@export var elevators: Array[BaseElevator2D]
+@export var elevator_indexed: Array[BaseElevator2D]

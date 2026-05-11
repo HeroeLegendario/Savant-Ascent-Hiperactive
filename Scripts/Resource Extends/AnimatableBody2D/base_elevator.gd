@@ -7,4 +7,4 @@ class_name BaseElevator2D
 var player_stand_position: Vector2
 
 func _process(_delta: float) -> void:
-	player_stand_position = $PlayerMarker2D.position
+	player_stand_position = $PlayerStepFloor.position

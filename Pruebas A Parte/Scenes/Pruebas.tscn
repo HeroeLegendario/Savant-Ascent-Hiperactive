@@ -4,16 +4,15 @@
 [ext_resource type="PackedScene" uid="uid://dq3b3f7ndtnh" path="res://Scenes/base_Elevator/base_elevator.tscn" id="1_ukrqy"]
 [ext_resource type="PackedScene" uid="uid://6d2kiy2a7p1c" path="res://Scenes/base_Player/player.tscn" id="2_wl7o8"]
 
-[node name="Pruebas" type="Node2D" unique_id=235224415 node_paths=PackedStringArray("elevators")]
+[node name="Pruebas" type="Node2D" unique_id=235224415]
 script = ExtResource("1_0hmhb")
-elevators = [NodePath("BaseElevator"), NodePath("BaseElevator2")]
 metadata/_custom_type_script = "uid://8k280sotjgej"
+
+[node name="Player" parent="." unique_id=937524245 instance=ExtResource("2_wl7o8")]
+position = Vector2(177, 173)
 
 [node name="BaseElevator" parent="." unique_id=1734896550 instance=ExtResource("1_ukrqy")]
 position = Vector2(176, 248)
 
 [node name="BaseElevator2" parent="." unique_id=911038731 instance=ExtResource("1_ukrqy")]
-position = Vector2(429, 253)
-
-[node name="Player" parent="." unique_id=937524245 instance=ExtResource("2_wl7o8")]
-position = Vector2(176, 181)
+position = Vector2(387, 248)
