@@ -1,2 +1,2 @@
 extends Resource
-class_name BaseEnemyRoundsResource
+class_name EnemyRoundsSystem

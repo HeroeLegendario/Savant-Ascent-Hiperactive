@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://wijbioedq2q5" path="res://Scripts/Resource Extends/CharacterBody2D/player.gd" id="1_uvnfx"]
 [ext_resource type="Texture2D" uid="uid://bf7jnkw0pin4e" path="res://Assets/Sprites/Arm/Arm.png" id="2_a3d8c"]
 [ext_resource type="Script" uid="uid://cctun1kns7vc0" path="res://Scripts/Resource Extends/Node2D/arm.gd" id="2_xpcdj"]
+[ext_resource type="Script" uid="uid://dsx0u3iuon8qn" path="res://Scripts/Resource Extends/Node/custom_components.gd" id="4_ppiim"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tugb3"]
 radius = 14.0
@@ -11,6 +12,7 @@ height = 52.0
 [node name="Player" type="CharacterBody2D" unique_id=937524245]
 collision_mask = 44
 script = ExtResource("1_uvnfx")
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1563760111]
 shape = SubResource("CapsuleShape2D_tugb3")
@@ -28,3 +30,4 @@ position = Vector2(68, 0)
 gizmo_extents = 1.0
 
 [node name="Custom Components" type="Node" parent="." unique_id=1217871767]
+script = ExtResource("4_ppiim")

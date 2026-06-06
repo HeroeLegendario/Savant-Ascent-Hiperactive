@@ -1,5 +1,5 @@
-extends Node2D
 class_name ArmBase
+extends Node2D
 
 @export var arm_components: Array[Resource] = []
 @export var arm_activator: Array[InputEventAction]

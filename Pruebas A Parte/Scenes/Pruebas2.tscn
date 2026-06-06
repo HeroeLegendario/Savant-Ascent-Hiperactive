@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://3rp71djvawrx"]
+
+[ext_resource type="Script" uid="uid://dorpfwe6xamnk" path="res://Pruebas A Parte/Scenes/Scripts/pruebas_2.gd" id="1_80pm0"]
+
+[node name="Pruebas2" type="Node" unique_id=1779059409]
+script = ExtResource("1_80pm0")
