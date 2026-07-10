@@ -4,15 +4,16 @@ extends Node
 @export var standalone_nodes: Array[BaseComponentNode]
 
 @onready var father: Node = $".."
-@onready var father_property = father.get_property_list()
+@onready var father_property: Array[Dictionary] = father.get_property_list()
 
 func instanciate_all_father_property_components() -> void:
 	for index in father_property:
 		if index.usage & PROPERTY_USAGE_SCRIPT_VARIABLE:
 			var filter = father.get(index.name)
 			if filter is BaseComponentNode:
-				add_child(filter)
-				filter._assembled_component(father)
+				if not filter.is_inside_tree():
+					add_child(filter)
+					filter._assembled_component(father)
 
 func assemble_standalone_nodes():
 	for index in standalone_nodes:

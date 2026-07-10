@@ -1,0 +1,11 @@
+{
+	"disabled_build_options": {
+
+	},
+	"disabled_classes": [
+		"NavigationAgent3D",
+		"Node3D",
+		"Shape3D"
+	],
+	"type": "build_profile"
+}

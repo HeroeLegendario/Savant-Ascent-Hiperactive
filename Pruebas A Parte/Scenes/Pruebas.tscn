@@ -5,13 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://6d2kiy2a7p1c" path="res://Scenes/base_Player/player.tscn" id="2_wl7o8"]
 [ext_resource type="Script" uid="uid://cq7p3iuo18qcc" path="res://Scripts/Resource Extends/Node2D/Elevator_Manager.gd" id="3_wc8fs"]
 
-[node name="Pruebas" type="Node" unique_id=629609184 node_paths=PackedStringArray("elevator_manager")]
+[node name="Pruebas" type="Node" unique_id=629609184 node_paths=PackedStringArray("elevator_manager", "player_spawn_elevator")]
 script = ExtResource("1_0hmhb")
 elevator_manager = NodePath("Elevadores")
+player_spawn_elevator = NodePath("Elevadores/BaseElevator")
 metadata/_custom_type_script = "uid://8k280sotjgej"
 
 [node name="Player" parent="." unique_id=937524245 instance=ExtResource("2_wl7o8")]
-position = Vector2(106, 191)
+position = Vector2(106, 217)
 
 [node name="Elevadores" type="Node" parent="." unique_id=343827706]
 script = ExtResource("3_wc8fs")
@@ -20,5 +21,5 @@ script = ExtResource("3_wc8fs")
 position = Vector2(106, 248)
 
 [node name="BaseElevator2" parent="Elevadores" unique_id=911038731 instance=ExtResource("1_ukrqy")]
-position = Vector2(459, 201)
+position = Vector2(405, 231)
 collision_mask = 27

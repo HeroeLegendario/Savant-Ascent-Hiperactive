@@ -1,4 +1,4 @@
-class_name BaseLevelNode
+class_name LevelNode
 extends Node
 
 @export_category("Switches")
@@ -6,8 +6,10 @@ extends Node
 
 @export_category("Basic Configuration")
 @export var level_name: String = ""
-@export_range(0, 2 ** 63 - 1) var level_time: int = 0 # El tiempo del nivel en segundos antes de terminar
+@export_range(0, 2 ** 63 - 1) var wave_time: int = 0 # El tiempo de las oleadas en segundos antes de iniciar una nueva, esto se usa si una oleada del nivel tiene tiempo 0
 @export var rounds_enemy: Array[EnemyRoundsSystem]
 @export var elevator_manager: ElevatorManager
+@export var player_spawn_elevator: BaseElevator2D
 
-var elevator_parsed: Array[BaseElevator2D]
+#func _process(delta: float) -> void:
+	#get_tree().root.visible = false

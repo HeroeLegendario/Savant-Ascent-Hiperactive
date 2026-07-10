@@ -9,16 +9,16 @@
 radius = 14.0
 height = 52.0
 
-[node name="Player" type="CharacterBody2D" unique_id=937524245]
-collision_mask = 44
+[node name="Player" type="CharacterBody2D" unique_id=937524245 groups=["Players"]]
+collision_mask = 46
 script = ExtResource("1_uvnfx")
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1563760111]
+position = Vector2(0, -26)
 shape = SubResource("CapsuleShape2D_tugb3")
 
 [node name="Arm" type="Node2D" parent="." unique_id=192524938]
-position = Vector2(0, -12)
+position = Vector2(0, -39)
 script = ExtResource("2_xpcdj")
 
 [node name="ArmSprite" type="Sprite2D" parent="Arm" unique_id=827545735]

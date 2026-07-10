@@ -1,7 +1,23 @@
 [gd_scene format=3 uid="uid://dulkma4j4lbea"]
 
+[sub_resource type="GDScript" id="GDScript_x3lfc"]
+resource_name = "peru"
+script/source = "extends ColorRect
+
+func _ready() -> void:
+	color = Color.PERU
+"
+
 [node name="Base_Game" type="Node" unique_id=1018688668]
 
 [node name="Props" type="Node" parent="." unique_id=514125300]
+
+[node name="ColorRect" type="ColorRect" parent="Props" unique_id=703191048]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_x3lfc")
 
 [node name="Level" type="Node2D" parent="." unique_id=2035056573]

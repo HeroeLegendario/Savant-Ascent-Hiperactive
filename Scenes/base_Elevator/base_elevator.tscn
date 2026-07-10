@@ -10,7 +10,7 @@ size = Vector2(54, 62)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_07vyo"]
 size = Vector2(30, 4)
 
-[node name="BaseElevator" type="AnimatableBody2D" unique_id=1734896550]
+[node name="BaseElevator" type="AnimatableBody2D" unique_id=1734896550 groups=["Elevators"]]
 collision_layer = 2
 collision_mask = 25
 script = ExtResource("1_07vyo")
@@ -19,12 +19,13 @@ script = ExtResource("1_07vyo")
 shape = SubResource("RectangleShape2D_u5cel")
 
 [node name="PlayerStepFloor" type="Area2D" parent="." unique_id=1656095216]
-position = Vector2(0, -33)
+position = Vector2(0, -31)
 collision_layer = 64
 script = ExtResource("2_5h0ck")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerStepFloor" unique_id=539891554]
+position = Vector2(0, -2)
 shape = SubResource("RectangleShape2D_07vyo")
 
 [node name="CustomComponentsController" type="Node" parent="." unique_id=799218785]
